@@ -1,0 +1,468 @@
+/*=====================================*/
+/*===============Général===============*/
+/*=====================================*/
+a {
+  text-decoration: none;
+  color: black;
+}
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.gras {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+body {
+  margin: auto !important;
+  max-width: 2440px;
+}
+
+/*==================================*/
+/*===============Body===============*/
+/*==================================*/
+.page {
+  margin: 0px 3% 0px 3%;
+  max-width: 2440px;
+}
+/*====================================*/
+/*===============Header===============*/
+/*====================================*/
+/* <--------Général--------> */
+.haut-de-page {
+  display: flex;
+  justify-content: space-between;
+}
+/* <--------Logo site--------> */
+.conteneur-logo {
+  display: flex;
+  align-content: end;
+}
+.conteneur-logo img {
+  max-height: 75px;
+  width: 100%;
+  margin: 45px 0 0 0;
+}
+/* <--------Onglets de selections--------> */
+.conteneur-liens {
+  display: inline-block;
+}
+.conteneur-liens a {
+  padding: 70px 35px 0 35px;
+  border-top: 3px solid transparent;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.conteneur-liens a:hover {
+  color: #0065fc;
+  border-top-color: #0065fc;
+}
+/*=================================*/
+/*===============Nav===============*/
+/*=================================*/
+/* <--------Textes d'introduction--------> */
+.navigations-principale h1 {
+  margin: 50px 0 0 0;
+}
+.navigations-principale p {
+  font-size: 1.5em;
+  margin: 15px 0 30px 0;
+}
+.titre {
+  padding: 0%;
+  margin: 0%;
+}
+/* <--------Formulaire de recherche--------> */
+form {
+  display: flex;
+  justify-content: flex-start;
+  height: 70px;
+}
+.fa-map-marker-alt {
+  font-size: 1.5em;
+  display: flex;
+  padding: 25px 30px;
+  border-radius: 18px 0 0 18px;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: none;
+}
+.textinput {
+  padding: 16px 20px;
+}
+.boutton {
+  background-color: #0065fc;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 0 19px 19px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+}
+.boutton .texte {
+  font-size: 1.5em;
+}
+.recherche input {
+  border: 1px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 350px;
+}
+.recherche input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+.boutton .icone {
+  display: none;
+}
+.boutton :hover {
+  cursor: pointer;
+}
+/* <--------Liste de filtres--------> */
+.filtres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 45px 0 0 0;
+}
+.filtres h2 {
+  text-align: center;
+  padding: 0 34px 0 0;
+  font-size: 1.5em;
+}
+.filtres-liste {
+  display: flex;
+  margin: 0;
+}
+.selecteur_filtre {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0 35px 0 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/* <--------checkbox filtres--------> */
+.selecteur_filtre:checked + label {
+  border: 3px solid #0065fc;
+}
+/* <--------mise en formes contours filtres--------> */
+.cercle-gris {
+  display: flex;
+  border: 3px solid #f2f2f2;
+  border-radius: 6666px;
+  align-items: center;
+  margin: 0 35px 0 0;
+}
+.cercle-gris:hover {
+  border: 3px solid #0065fc;
+}
+.cercle-gris i {
+  color: #0065fc;
+  font-size: 1.7em;
+}
+.fond_logo_filtre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #deebff;
+  min-width: 65px;
+  max-width: 65px;
+  min-height: 65px;
+  max-height: 65px;
+  border-radius: 6666px;
+  margin: 0 15px 0 0;
+}
+.texte_filtres {
+  display: inline;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 30px 0 0;
+}
+/* <--------Informations--------> */
+.cercle-information {
+  display: flex;
+  align-items: center;
+  padding: 50px 0 60px 0;
+}
+.fa-info {
+  border: 2px solid #f2f2f2;
+  color: #0065fc;
+  border-radius: 30px;
+  margin-right: 12px;
+  padding: 10px 15px 10px 15px;
+}
+.cercle-information p {
+  margin: 0;
+}
+/*======================================================================*/
+/*===============Commun hébergement & Les plus populaires===============*/
+/*======================================================================*/
+/* <--------Général--------> */
+.blocs_sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fa-star {
+  color: #0065fc;
+  margin-left: -3px;
+}
+.vide {
+  color: #d9d9d9;
+}
+/*=================================================*/
+/*===============Section hébergement===============*/
+/*=================================================*/
+.hebergement {
+  padding: 3%;
+  border-radius: 30px;
+  width: 66%;
+  background-color: #f2f2f2;
+}
+.hebergement h2 {
+  padding: 0 0 3% 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+.infobulle {
+  height: 580px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.tuiles_hebergements {
+  background-color: white;
+  border-radius: 30px;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  box-shadow: 0px 8px 20px rgb(197, 197, 197);
+}
+.tuiles_hebergements:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  box-shadow: 1px 1px 15px #0064fa;
+}
+.tuiles_hebergements .image_hebergement {
+  height: 165px;
+}
+.tuiles_hebergements img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+.tuiles_hebergements .titre {
+  padding: 3% 0 2% 5%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.tuiles_hebergements .tarif {
+  padding: 0 0 2% 5%;
+  font-size: 1.1em;
+}
+.tuiles_hebergements .etoiles {
+  padding: 0 0 2% 5%;
+  font-size: 1em;
+}
+.afficher_plus {
+  padding: 4% 0 0 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*=========================================================*/
+/*===============Section Les plus populaires===============*/
+/*=========================================================*/
+.bloc-blanc-pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.populaire {
+  background-color: #f2f2f2;
+  width: 31%;
+  padding: 3%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.titre_icone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.titre_icone h2 {
+  padding: 0 0 7% 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+.fa-chart-line {
+  justify-content: flex-end;
+  font-size: 2em;
+}
+.tuiles_populaires {
+  background-color: white;
+  border-radius: 30px;
+  padding: 1.3%;
+  display: flex;
+  flex-direction: row;
+  height: 29%;
+  box-shadow: 0px 8px 20px rgb(197, 197, 197);
+}
+.tuiles_populaires:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  box-shadow: 1px 1px 15px #0064fa;
+}
+.tuiles_populaires .image_populaires {
+  height: 100%;
+}
+.tuiles_populaires img {
+  width: 170px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px 0 0 25px;
+}
+.legende {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.tuiles_populaires .titre {
+  padding: 7% 0 2% 10%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.tuiles_populaires .tarif {
+  padding: 3% 0 2% 10%;
+  font-size: 1.3em;
+}
+.tuiles_populaires .etoiles {
+  padding: 20% 0 2% 10%;
+  font-size: 1em;
+}
+/*=========================================*/
+/*===============Activitées===============*/
+/*=========================================*/
+.activites_a_marseille {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 5% 0;
+}
+.activites_a_marseille h2 {
+  padding: 4% 0 1.5% 0;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+}
+.bloc_activites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.activites_a_marseille .colonne {
+  width: 22.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.activites_a_marseille .colonne .vignette {
+  width: 100%;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 1px 1px 15px rgba(117, 112, 112, 0.411);
+  overflow: hidden;
+}
+.grande_image {
+  height: 530px;
+  width: 100%;
+  display: block;
+}
+.cadre img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.bloc_activites .titre {
+  padding: 25px 25px 25px 25px;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
+.petite_image {
+  height: 150px;
+  width: 100%;
+  display: block;
+}
+.image_moyenne {
+  height: 250px;
+  width: 100%;
+  display: block;
+}
+.activites_a_marseille .vignette:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  box-shadow: 1px 1px 15px #0064fa;
+}
+/*====================================*/
+/*===============Footer===============*/
+/*====================================*/
+footer {
+  background-color: #f2f2f2;
+  margin: auto;
+  display: flex;
+  padding: 50px 0 0 0;
+}
+footer section {
+  padding-left: 3%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+footer h3 {
+  font-size: 1.5em;
+  margin: 0 0 30px 0;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 20px;
+}
+footer section a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+}
+footer section a:hover {
+  text-decoration: underline;
+}
+/*=======================================*/
+/*===============Copyright===============*/
+/*=======================================*/
+.copyright * {
+  background-color: #f2f2f2;
+  padding: 15px 0 0 0;
+  font-size: 10px;
+}

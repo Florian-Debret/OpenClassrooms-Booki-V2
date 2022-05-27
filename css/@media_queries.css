@@ -1,0 +1,567 @@
+/*===========================================================================*/
+/*===================================Tablette================================*/
+/*===========================================================================*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .page {
+    margin: 0;
+  }
+  /*====================================*/
+  /*===============Header===============*/
+  /*====================================*/
+  /* <--------General--------> */
+  .haut-de-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* <--------Logo--------> */
+  .conteneur-logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 70px;
+    width: auto;
+    margin: 0 0 10px 0;
+  }
+  /* <--------Onglets de selection--------> */
+  .conteneur-liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+  }
+  .conteneur-liens a {
+    padding: 35px 35px 15px 35px;
+    border: 3px solid transparent;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .conteneur-liens a:hover {
+    color: #0065fc;
+    border-bottom-color: #0065fc;
+    border-top-color: #0065fc00;
+  }
+  /*=================================*/
+  /*===============Nav===============*/
+  /*=================================*/
+  /* <--------Textes d'introductions--------> */
+  .navigations-principale {
+    margin: 20px 20px 0 20px;
+    padding: 0;
+  }
+
+  .navigations-principale .titre {
+    text-align: center;
+  }
+  .navigations-principale .titre h1 {
+    font-size: 25px;
+    padding: 0;
+    margin: 30px 0 0 0;
+  }
+  .navigations-principale .titre p {
+    padding: 0 0 20px 0;
+    margin: 15px 0 10px 0;
+    font-size: 1.1em;
+  }
+  .boutton .texte {
+    display: none;
+  }
+  .boutton .icone {
+    display: flex;
+  }
+  .filtres-liste {
+    order: 1;
+  }
+  .recherche {
+    order: 2;
+  }
+  .cercle-information {
+    padding: 15px 20px 30px 10px;
+    order: 3;
+  }
+  .cercle-information p {
+    font-size: 1em;
+  }
+  .fa-info {
+    padding: 5px 10px 5px 10px;
+  }
+  .fa-map-marker-alt {
+    padding: 15px 30px;
+  }
+
+  .blocs_sections {
+    flex-direction: column-reverse;
+  }
+  .populaire {
+    width: 100%;
+    border-radius: 0;
+  }
+  .infobulle {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin-top: 0;
+  }
+  .hebergement {
+    width: 100%;
+    background-color: white;
+  }
+  /* <--------Formulaire de recherche--------> */
+  .fa-map-marker-alt {
+    border-radius: 6666px;
+  }
+  .recherche * {
+    justify-content: flex-start;
+  }
+  .recherche {
+    margin: 10px 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    transform: none;
+    border-radius: 6666px;
+    order: 2;
+    background-color: #f2f2f2;
+  }
+  .recherche label {
+    flex: 1;
+  }
+  .recherche input {
+    font-size: 1.1em;
+    padding-left: 0;
+  }
+  .fa-map-marker-alt:before {
+    font-size: 0.8em;
+  }
+  .textinput {
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  .boutton {
+    border-radius: 66666px;
+  }
+  /* <--------Liste de filtres--------> */
+  .filtres {
+    margin: 20px 0 0 0;
+  }
+
+  .filtres h2 {
+    display: none;
+  }
+  .fond_logo_filtre {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  .cercle-gris i {
+    font-size: 1em;
+  }
+  .texte_filtres {
+    font-size: 1em;
+  }
+  .filtres-liste {
+    height: 55px;
+    justify-content: space-evenly;
+  }
+
+  /*=========================================================*/
+  /*===============Section Le splus populaires===============*/
+  /*=========================================================*/
+  .bloc-blanc-pop {
+    flex-direction: row;
+    overflow: auto;
+  }
+  .tuiles_populaires {
+    flex-direction: column;
+    padding: 0.6%;
+    border-radius: 17px;
+    margin: 0 10px;
+  }
+  .tuiles_populaires img {
+    width: 295px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 11px 11px 0 0;
+  }
+  .tuiles_populaires .titre {
+    padding: 2% 0 0 5%;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .tuiles_populaires .tarif {
+    padding: 2% 0 0 5%;
+    font-size: 1em;
+  }
+  .tuiles_populaires .etoiles {
+    padding: 3% 0 6% 5%;
+    font-size: 0.9em;
+  }
+  .titre_icone h2 {
+    font-size: 1.5em;
+    padding: 0 0 3% 0;
+  }
+  .fa-chart-line {
+    font-size: 1.5em;
+  }
+  /*=================================================*/
+  /*===============Section hébergement===============*/
+  /*=================================================*/
+  .tuiles_hebergements {
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 15px;
+  }
+  .tuiles_hebergements img {
+    width: 295px;
+    height: 200px;
+    border-radius: 11px 11px 0 0;
+  }
+  .tuiles_hebergements .image_hebergement {
+    height: auto;
+  }
+  .hebergement h2 {
+    font-size: 1.5em;
+  }
+  .infobulle {
+    flex-wrap: nowrap;
+    padding: 0;
+    height: auto;
+  }
+  .tuiles_hebergements .titre {
+    padding: 2% 0 0 5%;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .tuiles_hebergements .tarif {
+    padding: 2% 0 0 5%;
+    font-size: 1em;
+  }
+  .tuiles_hebergements .etoiles {
+    padding: 3% 0 6% 5%;
+    font-size: 0.9em;
+  }
+  .afficher_plus {
+    display: none;
+  }
+  /*=========================================*/
+  /*===============Activitées===============*/
+  /*=========================================*/
+  /* <--------général--------> */
+  .activites_a_marseille {
+    padding: 3% 0 0 3%;
+    background-color: #f2f2f2;
+  }
+  .activites_a_marseille h2 {
+    padding: 0 0 3% 0;
+    font-size: 1.5em;
+  }
+  .bloc_activites {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: 100%;
+  }
+  .bloc_activites a {
+    max-height: 200px;
+    min-height: 190px;
+    min-width: 250px;
+  }
+  .bloc_activites img {
+    max-height: 134px;
+    min-height: 134px;
+    max-width: 250px;
+    min-width: 200px;
+  }
+  .petite_image {
+    flex-direction: row;
+    flex-basis: unset;
+    width: auto;
+    width: 600px;
+  }
+  .grande_image {
+    width: auto;
+    display: inline;
+    max-height: 150px;
+    margin: 0 10px;
+  }
+  .vignette {
+    height: 190px;
+  }
+  .activites_a_marseille .colonne {
+    display: flex;
+    flex-direction: row;
+  }
+  /*====================================*/
+  /*===============Footer===============*/
+  /*====================================*/
+  footer h3 {
+    font-size: 1.1em;
+    margin: 0 0 20px 0;
+  }
+  footer section a {
+    font-size: 1em;
+  }
+  footer section li {
+    margin: 0 0 15px 0;
+  }
+}
+
+/*===========================================================================*/
+/*==============================Mobile=======================================*/
+/*===========================================================================*/
+@media screen and (max-width: 768px) {
+  /*====================================*/
+  /*===============Header===============*/
+  /*====================================*/
+
+  /*=================================*/
+  /*===============Nav===============*/
+  /*=================================*/
+
+  /*======================================================================*/
+  /*===============Commun hébergement & Les plus populaires===============*/
+  /*======================================================================*/
+
+  /*=========================================================*/
+  /*===============Section Le splus populaires===============*/
+  /*=========================================================*/
+
+  /*=================================================*/
+  /*===============Section hébergement===============*/
+  /*=================================================*/
+
+  /*=========================================*/
+  /*===============Activitées===============*/
+  /*=========================================*/
+  /* <--------général--------> */
+
+  /* <--------tuiles activitées--------> */
+
+  /*====================================*/
+  /*===============Footer===============*/
+  /*====================================*/
+
+  /*=====================================*/
+  /*=================Body================*/
+  /*=====================================*/
+  .page {
+    margin: 0;
+  }
+  /*====================================*/
+  /*===============Header===============*/
+  /*====================================*/
+  /* <--------General--------> */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* <--------Logo--------> */
+  .conteneur-logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 50px;
+    width: auto;
+    margin: 20px 0 0 0;
+  }
+  /* <--------Onglets de selection--------> */
+  .conteneur-liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+  }
+  .conteneur-liens a {
+    padding: 35px 35px 15px 35px;
+    border: 3px solid transparent;
+    width: 100%;
+  }
+  .conteneur-liens a:hover {
+    color: #0065fc;
+    border-bottom-color: #0065fc;
+    border-top-color: #0065fc00;
+  }
+  /*=================================*/
+  /*===============Nav===============*/
+  /*=================================*/
+  /* <--------Textes d'introductions--------> */
+  .navigations-principale {
+    margin: 20px 20px 0 20px;
+    padding: 0;
+  }
+  .titre h1 {
+    font-size: 25px;
+    padding: 0;
+    margin: 30px 0 0 0;
+  }
+  .titre p {
+    padding: 0 0 20px 0;
+  }
+  /* <--------Formulaire de recherche--------> */
+  .recherche {
+    width: 100%;
+  }
+  .boutton {
+    border-radius: 19px;
+    transform: translate(-19px);
+  }
+  .boutton .icone {
+    display: inline;
+  }
+  .boutton .texte {
+    display: none;
+  }
+  /* <--------Listes de filtres--------> */
+  .filtres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+  }
+  .filtres h2 {
+    text-align: start;
+    margin: 13px;
+  }
+  .filtres-liste {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .texte_filtres {
+    font-size: 1.5em;
+    margin: 0 2% 10px 0;
+  }
+  .filtre .cercle-gris span {
+    padding-right: 15px;
+  }
+  /* <--------Informations--------> */
+  .cercle-information {
+    padding: 30px 0;
+  }
+  /*======================================================================*/
+  /*===============Commun hébergement & Les plus populaires===============*/
+  /*======================================================================*/
+  /* <--------Général--------> */
+  .blocs_sections {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .blocs_sections h3 {
+    margin: 40px 0 0 0;
+  }
+  /*=========================================================*/
+  /*===============Section Le splus populaires===============*/
+  /*=========================================================*/
+  /* <--------Titre & icones--------> */
+  .populaire {
+    padding: 20px 20px 35px 20px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .populaire .bloc-blanc-pop {
+    margin-top: 0;
+  }
+
+  .titre_icone {
+    margin: 20px 0 0 0;
+  }
+  /* <--------bulles présentation hôtel--------> */
+  .bloc-blanc-pop a {
+    margin: 5px 0;
+  }
+  .bloc-blanc-pop img {
+    border-radius: 15px 0 0 15px;
+  }
+  /*=================================================*/
+  /*===============Section hébergement===============*/
+  /*=================================================*/
+  .hebergement {
+    padding: 40px 20px 20px 20px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+  }
+  .hebergement .infobulle {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .hebergement .infobulle a {
+    min-width: 100%;
+    margin: 7px 0;
+  }
+
+  .hebergement .infobulle figure {
+    margin: 5px;
+  }
+
+  .hebergement .infobulle a figure:hover {
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 15px #0064fa;
+  }
+  /*=========================================*/
+  /*===============Activitées===============*/
+  /*=========================================*/
+  /* <--------général--------> */
+  .activites_a_marseille {
+    padding: 0 20px;
+  }
+  .bloc_activites {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  /* <--------tuiles activitées--------> */
+  .bloc_activites .grande_image {
+    margin: 10px 0;
+  }
+  .bloc_activites img {
+    max-height: 134px;
+    min-height: 134px;
+  }
+  .petite_image {
+    width: auto;
+  }
+  .grande_image {
+    width: auto;
+  }
+  .grande_image figure:hover {
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 15px #0064fa;
+  }
+  .petite_image figure:hover {
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 15px #0064fa;
+  }
+  .cadre {
+    height: 190px;
+  }
+  /*====================================*/
+  /*===============Footer===============*/
+  /*====================================*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer section {
+    padding: 0 0 0 29px;
+  }
+  .copyright {
+    background-color: #f2f2f2;
+  }
+}
