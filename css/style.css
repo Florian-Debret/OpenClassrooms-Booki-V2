@@ -68,6 +68,10 @@ body {
 /*===============Nav===============*/
 /*=================================*/
 /* <--------Textes d'introduction--------> */
+.navigations-principale {
+  display: flex;
+  flex-direction: column;
+}
 .navigations-principale h1 {
   margin: 50px 0 0 0;
 }
@@ -84,6 +88,7 @@ form {
   display: flex;
   justify-content: flex-start;
   height: 70px;
+  width: 100%;
 }
 .fa-map-marker-alt {
   font-size: 1.5em;
@@ -143,6 +148,7 @@ form {
 }
 .filtres-liste {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 .selecteur_filtre {
@@ -165,7 +171,7 @@ form {
   border: 3px solid #f2f2f2;
   border-radius: 6666px;
   align-items: center;
-  margin: 0 35px 0 0;
+  margin: 0 35px 10px 0;
 }
 .cercle-gris:hover {
   border: 3px solid #0065fc;
