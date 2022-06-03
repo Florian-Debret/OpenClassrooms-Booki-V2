@@ -476,7 +476,7 @@
   .filtres h2 {
     font-size: 2em;
     text-align: start;
-    margin: 13px 0 20px 0;
+    margin: 5px 0 25px 0;
   }
   .filtres-liste {
     display: flex;
@@ -492,7 +492,7 @@
   }
   /* <--------Informations--------> */
   .cercle-information {
-    padding: 30px 0;
+    padding: 32px 0;
   }
   /*======================================================================*/
   /*===============Commun hébergement & Les plus populaires===============*/
@@ -504,7 +504,7 @@
   }
 
   .blocs_sections h3 {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
   }
   .tuiles_populaires .image_populaires {
     min-width: 150px;
@@ -519,8 +519,8 @@
   /*=========================================================*/
   /* <--------Titre & icones--------> */
   .populaire {
-    padding: 20px 20px 35px 20px;
-    margin: 0;
+    padding: 20px 20px 50px 20px;
+    margin: 10px 0 0 0;
     width: 100%;
     border-radius: 0;
   }
@@ -567,7 +567,7 @@
   /*===============Section hébergement===============*/
   /*=================================================*/
   .hebergement {
-    padding: 50px 20px 20px 20px;
+    padding: 55px 20px 20px 20px;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -584,7 +584,7 @@
   .hebergement .infobulle a {
     min-width: 100%;
     margin: 7px 0;
-    padding: 1%;
+    padding: 1.5%;
   }
 
   .hebergement .infobulle figure {
@@ -604,22 +604,22 @@
   /*===============Activitées===============*/
   /*=========================================*/
   /* <--------général--------> */
+
+  .activites_a_marseille h2 {
+    padding: 10% 0 5% 0;
+  }
   .activites_a_marseille {
     padding: 0 20px;
   }
   .bloc_activites {
     display: flex;
     flex-direction: column;
-    margin: 0px;
   }
   /* <--------tuiles activitées--------> */
-  .bloc_activites .grande_image {
-    margin: 10px 0;
-  }
-  .bloc_activites img {
+  /* .bloc_activites img {
     max-height: 134px;
     min-height: 134px;
-  }
+  } */
   .petite_image {
     width: auto;
   }
@@ -637,13 +637,14 @@
     box-shadow: 1px 1px 15px #0064fa;
   }
   .cadre {
-    height: 134px;
+    height: 180px;
   }
   .activites_a_marseille .colonne {
     width: 100%;
   }
   .activites_a_marseille .colonne .vignette {
     margin: 17px 0;
+    height: 250px;
   }
   /*====================================*/
   /*===============Footer===============*/
